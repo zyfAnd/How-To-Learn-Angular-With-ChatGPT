@@ -1,0 +1,11 @@
+/* styles: '
+    :host {
+        color : #a144eb;
+    }
+    ', */
+
+    styles: `
+  :host {
+    color: #a144eb;
+  }
+`,

@@ -6,7 +6,11 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: 'Hello Universe',
-  styleUrl: './app.component.css'
+  styles: `
+  :host {
+    color: blue;
+  }
+`,
 })
 export class AppComponent {
   title = 'anatomy-component';
