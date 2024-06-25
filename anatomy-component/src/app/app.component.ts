@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: 'Hello {{city}}',
+  template: 'Hello {{city}}, {{ 1 + 1 }}',
   styles: `
   :host {
     color: blue;
