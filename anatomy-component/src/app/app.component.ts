@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: 'Hello Universe',
+  template: 'Hello {{city}}',
   styles: `
   :host {
     color: blue;
@@ -14,4 +14,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'anatomy-component';
+  city = 'Shanghai'
 }
