@@ -5,11 +5,11 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: '<span>Yes the server is running </span>',
+  template: '@if (isLoginIn){<span>Yes the server is running </span>} @else{<p> welcome , seem you are logout</p>}',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'angular-controlflow-in-component-if';
 
-  isLoginIn = true;
+  isLoginIn = false;
 }
