@@ -5,9 +5,11 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  template: '<div [contentEditable]="isEditable"><p>Hello</p></div>',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'angular-property-binding';
+  isEditable = true;
+
 }
