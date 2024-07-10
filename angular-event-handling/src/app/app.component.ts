@@ -9,8 +9,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  message = "";
   greet(){
     alert("Message here");
+  }
+  onMouseOver(){
+    this.message = "Way to go!!";
   }
 
 }
