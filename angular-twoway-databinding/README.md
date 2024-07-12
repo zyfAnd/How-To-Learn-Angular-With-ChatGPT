@@ -1,0 +1,1 @@
+Angular's two way data binding syntax 
